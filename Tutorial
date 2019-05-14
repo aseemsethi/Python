@@ -209,5 +209,64 @@ OUTPUT = Eligible For Loan
 NOT REVERSES THE BOOLEAN VALUE
 """
 
+# Comparison Operators
+"""
+temperature = 30
+if temperature > 30:
+    print("It's a hot day")
+else:
+    print("It's not a hot day")
+OUTPUT = It's not a hot day
+
+Similarly,
+    >= - Greater Than Or Equal To
+    <  - Lesser Than
+    <= - Lesser Than Or Equal To
+    == - To Check If It Is EQUAL
+    != - Not Equal To
+    
+Exercise:
+name = 'John Smith'
+length = len(name)
+if length < 3:
+    print("Name Must Be At Least 3 Characters")
+elif length > 50:
+    print("Name Must Be A Maximum Of 50 Characters")
+else:
+    print("Name Looks Good!")
+"""
+
+# Project - Weight Converter
+"""
+wt = input("Weight : ")
+choice = input("(L)bs or (K)g : ")
+if choice == 'L' or choice == 'l':
+    new_wt = int(wt) * 0.45
+    print("You are", new_wt, "kilos.")
+elif choice == 'K' or choice == 'k':
+    new_wt = int(wt) / 0.45
+    print("You are", new_wt, "pounds.")
+else:
+    print("Wrong Input")
+"""
+
+# While Loops
+"""
+i = 1
+while i <= 5:
+    print(i)
+    i = i + 1
+print("Done")
+OUTPUT =
+1
+2
+3
+4
+5
+Done
+
+
+"""
+
 
 
