@@ -1,0 +1,213 @@
+# PYTHON PROGRAMMING
+
+# Printing
+"""
+Python Is Case Sensitive
+
+print("Dhruv Sethi")
+print('o----')
+print(' ||||')
+print('*' * 10)
+"""
+
+# Variables
+"""
+price = 10
+rating = 4.9
+name = 'Mosh'
+is_published = False
+print(price)
+print(name, '\n', rating)
+print(is_published)
+
+Exercise
+full_name = 'John Smith'
+age = 20
+is_new = True
+print('Name : ', name)
+print('Age : ', age)
+print('New User? : ', is_new)
+"""
+
+# Getting Input
+"""
+name = input('What is your name ? ')
+colour = input('What is your favourite colour : ')
+print(name + ' likes ' + colour)
+
+Note : 
+For Concating, we can use '+' or ','.
++ - Doesnt put a space
+, - Puts a space automatically
+"""
+
+# Type Conversion
+"""
+birth_year = input('Birth Year : ')
+print(type(birth_year))
+age = 2019 - int(birth_year)
+print(type(age))
+print(age)
+
+Exercise
+pounds = input('Enter your weight(Pounds) : ')
+kilo = int(pounds) * 0.45
+print('Weight In Kilos : ', kilo)   #Cannot Use + For Concating Different Data Types
+"""
+
+# Strings
+"""
+For Printing Single Or Double Quotes In The String : 
+print("Python's Course") 
+print('"Python" Course')
+
+For Printing Character Of A String : 
+course = 'Python For Beginners'
+print(course[0])    Output = P
+print(course[-1])   Output = s
+print(course[0:3])  Output = Pyt    Does NOT INCLUDE 'h'
+print(course[0:])   Output = Python For Beginners
+print(course[1:])   Output = ython For Beginners
+print(course[:5])   Output = Pytho
+
+another = course[:]
+print(another)    Output = Python For Beginners
+
+name = 'Jennifer'
+print(name[1:-1])   Output = ennife
+"""
+
+# Formatted Strings
+"""
+first = 'John'
+last = 'Smith'
+message = first + ' [' + last + '] is a coder.'
+
+# Alternate Method Using Place Holders {} : 
+msg = f'{first} [{last}] is a coder.'
+print(message)
+print(msg)
+"""
+
+# String Methods
+"""
+# Length Of Strings
+course = 'Python For Beginners'
+print(len(course))
+
+# To Upper Case - Will Not Change The Existing String
+print(course.upper())   Output = PYTHON FOR BEGINNERS
+
+# To Lower Case
+print(course.lower())   Output = python for beginners
+
+# To Find Index Of A Character
+print(course.find('P')) Output = 0
+If the character is not present, output = -1
+print(course.find('Beginners')) Output = 11
+Because 'B' is at index 11
+
+# To Replace Character Or String
+print(course.replace('Beginners', 'Absolute Beginners'))    Output = Python For Absolute Beginners
+print(course.replace('P', 'J')) Output = Jython For Beginners
+
+# To Find Existence Of Character Or String - Boolean - USE 'in'
+print('Python' in course)   Output = True
+print('python' in course)   Output = False
+"""
+
+# Arithmetic Operations
+"""
+print(10 + 3)   Output = 13
+print(10 - 3)   Output = 7
+print(10 * 3)   Output = 30
+print(10 / 3)   Output = 3.3333    Returns FLOATING
+print(10 // 3)  Output = 3         Returns INTEGER
+print(10 % 3)   Output = 1
+print(10 ** 3)  Output = 1000
+
+x = 10
+x = x + 3   IS SAME AS  x += 3
+Works With All Arithmetic Operations
+"""
+
+# Operation Precedence
+"""
+x = (10 + 3) * 2 ** 2
+print(x)    Output = 52
+
+Order : 
+    Parenthesis
+    Exponentiation
+    Multiplication Or Division
+    Addition Or Subtraction    
+"""
+
+# Math Functions
+"""
+x = 2.9
+print(round(x)) Output = 3
+
+x = -2.9
+print(abs(x)    Output = 2.9    ALWAYS +VE
+
+WE CAN IMPORT MATH MODULE FOR SOME FUNCTIONS
+import math
+print(math.ceil(2.9))   Output = 3
+print(math.floor(2.9))  Output = 2
+CHECK INTERNET FOR MORE MATH MODULES
+"""
+
+# If Statements
+"""
+is_hot = False
+is_cold = True
+
+if is_hot:
+    print("It's a hot day")
+elif is_cold:
+    print("It's a cold day")
+else:
+    print("It's a lovely day")
+print("Enjoy Your Day")
+
+OUTPUT = It's a cold day
+Enjoy Your Day
+
+Exercise : 
+price = 1000000
+has_good_credit = True
+
+if has_good_credit:
+    down_payment = 0.1 * price
+else:
+    down_payment = 0.2 * price
+print(f"Down Payment: ${down_payment}")
+
+OUTPUT = Down payment: $100000.0
+"""
+
+# Logical Operators - AND OR NOT
+"""
+has_high_income = True
+has_good_credit = False
+if has_high_income and has_good_credit:
+    print("Eligible For Loan")   
+NO OUTPUT
+BOTH HAVE TO BE TRUE
+
+if has_high_income or has_good_income:
+    print("Eligible For Loan")  
+OUTPUT = Eligible For Loan
+AT LEAST ONE SHOULD BE TRUE
+
+has_good_credit = True
+has_criminal_record = False
+if has_good_credit and not has_criminal record:    
+    print("Eligible For Loan")
+OUTPUT = Eligible For Loan
+NOT REVERSES THE BOOLEAN VALUE
+"""
+
+
+
